@@ -67,13 +67,13 @@ All BigDecimal values always contain exactly two decimal places and use
 This endpoint causes all existing transactions to be deleted The endpoint accepts an empty request body and return
 a `204` status code.
 
-`DELETE /transactions` 
+`DELETE /transactions`
 
 ## Implementation
+
 - Java 11, Maven.
 - The API is threadsafe for concurrent requests.
-- The solution works without a database and also in-memory
-  databases. It uses only data-structures.
+- The solution works without a database and also in-memory databases. It uses only data-structures.
 - Service does not store all transactions in memory for all time.
 - Transactions not necessary for correct calculation will be discarded.
 
